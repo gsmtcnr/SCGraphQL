@@ -7,9 +7,9 @@ namespace SCGraphQL.GraphTypes
     {
         public OrderGraphType()
         {
-            //Field(s => s.Id);
-            //Field(s => s.UserId);
-            //Field(s => s.UserAddressId);
+            Field(s => s.Id);
+            Field(s => s.UserId);
+            Field(s => s.UserAddressId);
             Field(s => s.TotalPrice);
         }
     }

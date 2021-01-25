@@ -6,28 +6,28 @@ using System;
 
 namespace SCGraphQL.GraphResolvers.Queries
 {
-    public class OrderQuery : ObjectGraphType, IQueryResolver
+    public class UserQuery : ObjectGraphType, IQueryResolver
     {
-        public OrderQuery()
+        public UserQuery()
         {
-            Name = "OrderQuery";
-            OrderService orderService = new OrderService();
+            Name = "UserQuery";
+            UserService userService = new UserService();
             Field<OrderGraphType>
                (
-                   name: "getOrder",
+                   name: "getUser",
                    arguments: new QueryArguments(new QueryArgument<GuidGraphType>
                    {
                        Name = "id"
                    }),
-                resolve: context => orderService.GetById(context.GetArgument<Guid>("id"))
+                resolve: context => userService.GetById(context.GetArgument<Guid>("id"))
                );
 
             Field<ListGraphType<OrderGraphType>>
               (
-                  name: "getOrders",
+                  name: "getUsers",
                   resolve: context =>
                   {
-                      return orderService.GetList();
+                      return userService.GetList();
                   }
               );
         }
