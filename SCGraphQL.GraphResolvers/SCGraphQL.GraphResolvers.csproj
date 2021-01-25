@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="3.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SCGraphQL.IoCManagement\SCGraphQL.IoCManagement.csproj" />
+    <ProjectReference Include="..\SCGraphQL.Model\SCGraphQL.Model.csproj" />
+    <ProjectReference Include="..\SCGraphQL.Service\SCGraphQL.Service.csproj" />
+  </ItemGroup>
+
+</Project>

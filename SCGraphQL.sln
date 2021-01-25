@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.Model", "SCGraphQL.Model\SCGraphQL.Model.csproj", "{5FFC2FBE-15DA-4B66-9626-1E8CD057A130}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Models", "01.Models", "{3304DAF9-7A00-4C36-B722-EB93CAC5D05B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Services", "02.Services", "{1D7E62FE-CF0A-42EA-BE65-1901CA9D1370}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.Service", "SCGraphQL.Service\SCGraphQL.Service.csproj", "{91190AA3-6793-4A05-B256-6CC9D7C9556F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphQLServer", "SCGraphQL.GraphQLServer\SCGraphQL.GraphQLServer.csproj", "{9928237C-A534-4085-AEF0-E7FCCE9C7DD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphTypes", "SCGraphQL.GraphTypes\SCGraphQL.GraphTypes.csproj", "{85704CE4-A160-4123-96EF-EFB74E927950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Resolvers", "03.Resolvers", "{4AA415FA-2761-422D-B704-D6DA60FBDB3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphResolvers", "SCGraphQL.GraphResolvers\SCGraphQL.GraphResolvers.csproj", "{D1B52885-E000-4E95-8058-292279CA709D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Container", "02.Container", "{A391EFE0-DEB4-439C-8170-6DAF83F9DCAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.IoCManagement", "SCGraphQL.IoCManagement\SCGraphQL.IoCManagement.csproj", "{8FA17849-6B54-47C3-B74F-E84ACB89CABB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Prensentations", "04.Prensentations", "{2D8E805F-9BA5-4B53-A1F8-4B22AB226E32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FFC2FBE-15DA-4B66-9626-1E8CD057A130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFC2FBE-15DA-4B66-9626-1E8CD057A130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFC2FBE-15DA-4B66-9626-1E8CD057A130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFC2FBE-15DA-4B66-9626-1E8CD057A130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91190AA3-6793-4A05-B256-6CC9D7C9556F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91190AA3-6793-4A05-B256-6CC9D7C9556F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91190AA3-6793-4A05-B256-6CC9D7C9556F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91190AA3-6793-4A05-B256-6CC9D7C9556F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9928237C-A534-4085-AEF0-E7FCCE9C7DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9928237C-A534-4085-AEF0-E7FCCE9C7DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9928237C-A534-4085-AEF0-E7FCCE9C7DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9928237C-A534-4085-AEF0-E7FCCE9C7DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85704CE4-A160-4123-96EF-EFB74E927950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85704CE4-A160-4123-96EF-EFB74E927950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85704CE4-A160-4123-96EF-EFB74E927950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85704CE4-A160-4123-96EF-EFB74E927950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B52885-E000-4E95-8058-292279CA709D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B52885-E000-4E95-8058-292279CA709D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B52885-E000-4E95-8058-292279CA709D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B52885-E000-4E95-8058-292279CA709D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA17849-6B54-47C3-B74F-E84ACB89CABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA17849-6B54-47C3-B74F-E84ACB89CABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA17849-6B54-47C3-B74F-E84ACB89CABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA17849-6B54-47C3-B74F-E84ACB89CABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FFC2FBE-15DA-4B66-9626-1E8CD057A130} = {3304DAF9-7A00-4C36-B722-EB93CAC5D05B}
+		{91190AA3-6793-4A05-B256-6CC9D7C9556F} = {1D7E62FE-CF0A-42EA-BE65-1901CA9D1370}
+		{9928237C-A534-4085-AEF0-E7FCCE9C7DD4} = {2D8E805F-9BA5-4B53-A1F8-4B22AB226E32}
+		{85704CE4-A160-4123-96EF-EFB74E927950} = {3304DAF9-7A00-4C36-B722-EB93CAC5D05B}
+		{D1B52885-E000-4E95-8058-292279CA709D} = {4AA415FA-2761-422D-B704-D6DA60FBDB3E}
+		{8FA17849-6B54-47C3-B74F-E84ACB89CABB} = {A391EFE0-DEB4-439C-8170-6DAF83F9DCAE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E983746-73F0-4A9F-951F-52F9FF7A8A2B}
+	EndGlobalSection
+EndGlobal

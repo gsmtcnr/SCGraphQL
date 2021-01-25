@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+  
+    <ProjectReference Include="..\SCGraphQL.Model\SCGraphQL.Model.csproj" />
+  </ItemGroup>
+
+</Project>
