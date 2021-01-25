@@ -1,6 +1,7 @@
 ﻿using GraphQL;
 using GraphQL.Types;
 using SCGraphQL.GraphTypes;
+using SCGraphQL.IoCManagement;
 using SCGraphQL.Service;
 using System;
 
@@ -11,7 +12,7 @@ namespace SCGraphQL.GraphResolvers.Queries
         public OrderQuery()
         {
             Name = "OrderQuery";
-            OrderService orderService = new OrderService();
+            IOrderService orderService = IoCManager.Resolve<IOrderService>();
             Field<OrderGraphType>
                (
                    name: "getOrder",

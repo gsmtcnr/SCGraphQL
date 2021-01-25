@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SCGraphQL.Service
 {
-    public interface IService<TDto>
+    public interface IService<TDto> : IScoppedDependency
      where TDto : class, IDto, new()
     {
         public TDto GetById(Guid id);

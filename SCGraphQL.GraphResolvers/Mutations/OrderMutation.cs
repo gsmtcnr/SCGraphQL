@@ -1,6 +1,7 @@
 ﻿using GraphQL;
 using GraphQL.Types;
 using SCGraphQL.GraphTypes;
+using SCGraphQL.IoCManagement;
 using SCGraphQL.Model;
 using SCGraphQL.Service;
 
@@ -11,7 +12,7 @@ namespace SCGraphQL.GraphResolvers.Mutations
         public OrderMutation()
         {
             Name = "OrderMutation";
-            OrderService orderService = new OrderService();
+            IOrderService orderService = IoCManager.Resolve<IOrderService>();
             Field<OrderGraphType>
               (
                   name: "insertOrder",

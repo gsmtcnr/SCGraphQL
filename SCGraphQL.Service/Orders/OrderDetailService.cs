@@ -2,7 +2,11 @@
 
 namespace SCGraphQL.Service
 {
-    public class OrderDetailService : BaseService<OrderDetailDto>
+    public class OrderDetailService : BaseService<OrderDetailDto>, IOrderDetailService
     {
+    }
+    public interface IOrderDetailService : IService<OrderDetailDto>
+    {
+
     }
 }

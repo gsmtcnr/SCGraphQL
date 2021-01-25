@@ -1,6 +1,7 @@
 ﻿using GraphQL;
 using GraphQL.Types;
 using SCGraphQL.GraphTypes;
+using SCGraphQL.IoCManagement;
 using SCGraphQL.Service;
 using System;
 
@@ -11,8 +12,8 @@ namespace SCGraphQL.GraphResolvers.Queries
         public UserQuery()
         {
             Name = "UserQuery";
-            UserService userService = new UserService();
-            Field<OrderGraphType>
+            IUserService userService = IoCManager.Resolve<IUserService>();
+            Field<UserGraphType>
                (
                    name: "getUser",
                    arguments: new QueryArguments(new QueryArgument<GuidGraphType>
@@ -22,7 +23,7 @@ namespace SCGraphQL.GraphResolvers.Queries
                 resolve: context => userService.GetById(context.GetArgument<Guid>("id"))
                );
 
-            Field<ListGraphType<OrderGraphType>>
+            Field<ListGraphType<UserGraphType>>
               (
                   name: "getUsers",
                   resolve: context =>
