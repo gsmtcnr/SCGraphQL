@@ -3,7 +3,7 @@ using SCGraphQL.Model;
 
 namespace SCGraphQL.GraphTypes
 {
-    public class UserGraphType : ObjectGraphType<UserDto>
+    public class UserGraphType : ObjectGraphType<UserDto>, IScoppedGraphType
     {
         public UserGraphType()
         {

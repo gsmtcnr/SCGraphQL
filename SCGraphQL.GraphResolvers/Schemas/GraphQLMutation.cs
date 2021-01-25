@@ -11,9 +11,10 @@ namespace SCGraphQL.Presentation.Schemas
             IMutationResolver[] list = IoCManager.ResolveAll<IMutationResolver>();
             foreach (var item in list)
             {
-                var objectGraphType = item as ObjectGraphType<object>;
+                ObjectGraphType<object> objectGraphType = item as ObjectGraphType<object>;
                 foreach (var field in objectGraphType.Fields)
                 {
+                   
                     AddField(field);
                 }
             }

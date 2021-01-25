@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SCGraphQL.GraphQLServer
 {
-    public class Program
+    public static class Program
     {
         public static Task Main(string[] args) => Host
            .CreateDefaultBuilder(args)

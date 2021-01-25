@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SCGraphQL.GraphTypes\SCGraphQL.GraphTypes.csproj" />
     <ProjectReference Include="..\SCGraphQL.IoCManagement\SCGraphQL.IoCManagement.csproj" />
     <ProjectReference Include="..\SCGraphQL.Model\SCGraphQL.Model.csproj" />
     <ProjectReference Include="..\SCGraphQL.Service\SCGraphQL.Service.csproj" />
