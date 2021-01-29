@@ -11,7 +11,7 @@ namespace SCGraphQL.GraphResolvers.Mutations
     {
         public OrderMutation()
         {
-            Name = "OrderMutation";
+            Name = nameof(OrderMutation);
             IOrderService orderService = IoCManager.Resolve<IOrderService>();
             Field<OrderGraphType>
               (

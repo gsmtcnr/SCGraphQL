@@ -9,6 +9,10 @@ namespace SCGraphQL.Service
       where TDto : class, IDto, new()
     {
         public static List<TDto> DummyList { get; set; }
+        protected BaseService()
+        {
+            DummyList = new List<TDto>();
+        }
         public virtual TDto GetById(Guid id)
         {
             return DummyList.FirstOrDefault(v => v.Id == id);

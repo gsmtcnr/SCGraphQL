@@ -11,7 +11,7 @@ namespace SCGraphQL.Presentation.Schemas
             IQueryResolver[] list = IoCManager.ResolveAll<IQueryResolver>();
             foreach (var item in list)
             {
-                var objectGraphType = item as ObjectGraphType<object>;
+                ObjectGraphType<object> objectGraphType = item as ObjectGraphType<object>;
                 foreach (var field in objectGraphType.Fields)
                 {
                     AddField(field);

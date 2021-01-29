@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using SCGraphQL.IoCManagement;
-using SCGraphQL.Presentation.Schemas;
 
 namespace SCGraphQL.GraphQLServer
 {
@@ -14,10 +12,9 @@ namespace SCGraphQL.GraphQLServer
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            IoCManager.Install();
-            services.AddSingleton<GraphQLMutation>();
-            services.AddSingleton<GraphQLQuery>();
-            services.AddSingleton<ISchema, GraphQLSchema>();
+            services.InstallContainer();
+            services.AddGraphTypes();
+            services.AddGraphSchema();
             services.AddLogging(builder => builder.AddConsole());
             services.AddHttpContextAccessor();
             services.AddGraphQL(options =>
@@ -27,16 +24,13 @@ namespace SCGraphQL.GraphQLServer
             .AddErrorInfoProvider(opt => opt.ExposeExceptionStackTrace = true)
             .AddSystemTextJson();
         }
-
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-        
+
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
-
             // add http for Schema at default url /graphql
             app.UseGraphQL<ISchema>();
-
             // use graphql-playground at default url /ui/playground
             app.UseGraphQLPlayground();
         }

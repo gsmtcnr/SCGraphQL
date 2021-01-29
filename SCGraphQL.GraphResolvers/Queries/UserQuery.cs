@@ -11,7 +11,7 @@ namespace SCGraphQL.GraphResolvers.Queries
     {
         public UserQuery()
         {
-            Name = "UserQuery";
+            Name = nameof(UserQuery);
             IUserService userService = IoCManager.Resolve<IUserService>();
             Field<UserGraphType>
                (

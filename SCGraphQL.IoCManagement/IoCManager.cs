@@ -48,7 +48,7 @@ namespace SCGraphQL.IoCManagement
         {
             return container.Resolve(service);
         }
-        public static void Dispose()
+        public static void Disposed()
         {
             container.Dispose();
         }

@@ -11,7 +11,7 @@ namespace SCGraphQL.GraphResolvers.Queries
     {
         public OrderQuery()
         {
-            Name = "OrderQuery";
+            Name = nameof(OrderQuery);
             IOrderService orderService = IoCManager.Resolve<IOrderService>();
             Field<OrderGraphType>
                (

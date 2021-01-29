@@ -8,7 +8,7 @@ namespace SCGraphQL.GraphTypes
         public OrderInputGraphType()
         {
             Field(s => s.UserId);
-            Field(s => s.UserAddressId);
+            Field(s => s.DiscountPrice, nullable: true);
             Field(s => s.TotalPrice);
         }
     }
