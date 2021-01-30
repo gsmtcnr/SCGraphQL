@@ -10,7 +10,6 @@ namespace SCGraphQL.GraphQLServer
     {
         public static void AddGraphTypes(this IServiceCollection services)
         {
-            services.AddSingleton<UserGraphType>();
             ISingletonGraphType[] list = IoCManager.ResolveAll<ISingletonGraphType>();
             foreach (ISingletonGraphType item in list)
             {

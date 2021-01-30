@@ -9,10 +9,15 @@ namespace SCGraphQL.GraphTypes
     {
         public OrderGraphType()
         {
-            IOrderDetailService orderDetailService = IoCManager.Resolve<IOrderDetailService>();
-            IUserService userService = IoCManager.Resolve<IUserService>();
+         
             Field(s => s.Id);
             Field(s => s.UserId);
+            Field(s => s.DiscountPrice, nullable: true);
+            Field(s => s.TotalPrice);
+
+
+            IOrderDetailService orderDetailService = IoCManager.Resolve<IOrderDetailService>();
+            IUserService userService = IoCManager.Resolve<IUserService>();
             Field<UserGraphType>
                  (
                      name: "user",
@@ -21,8 +26,7 @@ namespace SCGraphQL.GraphTypes
                          return userService.GetById(context.Source.UserId);
                      }
                  );
-            Field(s => s.DiscountPrice, nullable: true);
-            Field(s => s.TotalPrice);
+        
             Field<ListGraphType<OrderDetailGraphType>>
             (
                 name: "details",

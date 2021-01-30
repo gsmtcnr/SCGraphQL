@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphQLServer", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphTypes", "SCGraphQL.GraphTypes\SCGraphQL.GraphTypes.csproj", "{85704CE4-A160-4123-96EF-EFB74E927950}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Resolvers", "04.Resolvers", "{4AA415FA-2761-422D-B704-D6DA60FBDB3E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Resolvers", "05.Resolvers", "{4AA415FA-2761-422D-B704-D6DA60FBDB3E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.GraphResolvers", "SCGraphQL.GraphResolvers\SCGraphQL.GraphResolvers.csproj", "{D1B52885-E000-4E95-8058-292279CA709D}"
 EndProject
@@ -23,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Container", "02.Containe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCGraphQL.IoCManagement", "SCGraphQL.IoCManagement\SCGraphQL.IoCManagement.csproj", "{8FA17849-6B54-47C3-B74F-E84ACB89CABB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Servers", "05.Servers", "{2D8E805F-9BA5-4B53-A1F8-4B22AB226E32}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Servers", "06.Servers", "{2D8E805F-9BA5-4B53-A1F8-4B22AB226E32}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Types", "03.Types", "{8E01A479-26B9-45F2-ACCD-D5102CFD6E89}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Types", "04.Types", "{8E01A479-26B9-45F2-ACCD-D5102CFD6E89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
