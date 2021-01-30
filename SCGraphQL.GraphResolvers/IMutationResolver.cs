@@ -2,7 +2,7 @@
 
 namespace SCGraphQL.GraphResolvers
 {
-    public interface IMutationResolver : IScopedDependency
+    public interface IMutationResolver : ISingletonDependency
     {
 
     }
