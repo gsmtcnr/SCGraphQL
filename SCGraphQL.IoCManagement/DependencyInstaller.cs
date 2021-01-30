@@ -15,9 +15,13 @@ namespace SCGraphQL.IoCManagement
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             AssemblyFilter assemblyFilter = new AssemblyFilter(_assemblyDirectoryName, mask: _mask);
-            container.Register(Classes.FromAssemblyInDirectory(assemblyFilter).BasedOn<IScoppedDependency>()
-                     .WithServiceSelect(ServiceSelector).LifestyleScoped()
-                     );
+            container.Register(Classes.FromAssemblyInDirectory(assemblyFilter).BasedOn<IScopedDependency>()
+                     .WithServiceSelect(ServiceSelector).LifestyleScoped());
+
+            container.Register(Classes.FromAssemblyInDirectory(assemblyFilter).BasedOn<ISingletonDependency>()
+                  .WithServiceSelect(ServiceSelector).LifestyleSingleton());
+
+
         }
         private static IEnumerable<Type> ServiceSelector(Type type, Type[] baseTypes)
         {

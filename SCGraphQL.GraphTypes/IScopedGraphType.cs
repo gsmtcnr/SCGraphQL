@@ -2,7 +2,7 @@
 
 namespace SCGraphQL.GraphTypes
 {
-    public interface IScoppedGraphType : IScoppedDependency
+    public interface ISingletonGraphType : ISingletonDependency
     {
     }
 }

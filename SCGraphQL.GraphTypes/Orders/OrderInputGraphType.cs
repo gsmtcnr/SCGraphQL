@@ -3,7 +3,7 @@ using SCGraphQL.Model;
 
 namespace SCGraphQL.GraphTypes
 {
-    public class OrderInputGraphType : InputObjectGraphType<OrderDto>, IScoppedGraphType
+    public class OrderInputGraphType : InputObjectGraphType<OrderDto>, ISingletonGraphType
     {
         public OrderInputGraphType()
         {

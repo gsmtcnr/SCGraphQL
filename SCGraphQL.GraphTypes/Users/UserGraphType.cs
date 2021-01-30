@@ -5,7 +5,7 @@ using SCGraphQL.Service;
 
 namespace SCGraphQL.GraphTypes
 {
-    public class UserGraphType : ObjectGraphType<UserDto>, IScoppedGraphType
+    public class UserGraphType : ObjectGraphType<UserDto>, ISingletonGraphType
     {
         public UserGraphType()
         {

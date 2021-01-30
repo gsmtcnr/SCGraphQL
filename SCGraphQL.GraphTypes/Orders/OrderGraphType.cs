@@ -5,7 +5,7 @@ using SCGraphQL.Service;
 
 namespace SCGraphQL.GraphTypes
 {
-    public class OrderGraphType : ObjectGraphType<OrderDto>, IScoppedGraphType
+    public class OrderGraphType : ObjectGraphType<OrderDto>, ISingletonGraphType
     {
         public OrderGraphType()
         {

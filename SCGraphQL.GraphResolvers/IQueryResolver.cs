@@ -2,7 +2,7 @@
 
 namespace SCGraphQL.GraphResolvers
 {
-    public interface IQueryResolver : IScoppedDependency
+    public interface IQueryResolver : IScopedDependency
     {
     }
 }

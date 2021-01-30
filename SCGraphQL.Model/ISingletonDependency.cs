@@ -1,6 +1,6 @@
 ﻿namespace SCGraphQL.Model
 {
-    public interface IScoppedDependency
+    public interface ISingletonDependency
     {
 
     }
